@@ -50,7 +50,7 @@ public class CaesarCipher {
 					character = (char)(((int)character - shift - 97) % 26 + 97);
 				}
 			}
-			decryptedMessage.append(character);
+			decryptedMessage.append(character); // add spaces and newly decrypted characters to the decrypted message
 		}
 		return decryptedMessage;
 	}
